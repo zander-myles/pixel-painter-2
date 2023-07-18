@@ -50,7 +50,10 @@ button {
         .grid {
         width: 800px;
         height: 800px;
+        margin-bottom: 20px;
+
         border: 2px solid #ebebeb;
+        border-radius: 5px;
         }
 
     .options-section {
