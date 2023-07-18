@@ -53,3 +53,8 @@ body {
         p {
             font-size: 44px;
         }
+
+        .option {
+            display: flex;
+            justify-content: space-between;
+        }
