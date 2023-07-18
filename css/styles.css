@@ -58,3 +58,8 @@ body {
             display: flex;
             justify-content: space-between;
         }
+
+        .option.color-schemes {
+            display: flex;
+            flex-direction: column;
+        }
