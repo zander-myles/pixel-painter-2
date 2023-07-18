@@ -24,27 +24,27 @@ body {
     width: 850px;
 }
 
-.paint-section {
+    .paint-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-    h1 {
-        font-size: 64px;
     }
 
-    .grid {
+        h1 {
+        font-size: 64px;
+        }
+
+        .grid {
         width: 800px;
         height: 800px;
         border: 2px solid #ebebeb;
-    }
+        }
 
-.options-section {
+    .options-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-    h2 {
-        font-size: 52px;
     }
+        h2 {
+        font-size: 52px;
+        }
