@@ -65,6 +65,10 @@ body {
             justify-content: space-between;
         }
 
+        .grid-size-container {
+            display: flex;
+        }
+
         .option.color-schemes {
             display: flex;
             flex-direction: column;
