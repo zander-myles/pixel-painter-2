@@ -96,8 +96,9 @@ body {
                     .preview {
                         width: 180px;
                         height: 180px;
+                        margin: 10px;
                         
-                        border-radius: 30px;
+                        border-radius: 20px;
                         border: 2px solid #ebebeb;
                     }
 
