@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: 'VT323', monospace;
 }
@@ -21,6 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
     .grid {
         width: 800px;
         height: 800px;
