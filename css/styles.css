@@ -79,6 +79,11 @@ button {
         .option {
             display: flex;
             justify-content: space-between;
+
+            border-top: 2px dashed #bebebe33;
+            border-bottom: 2px dashed #bebebe33;
+
+            padding: 10px;
         }
 
         .grid-size-container {
