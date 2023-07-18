@@ -81,6 +81,9 @@ button {
         }
 
         .grid {
+        display: flex;
+        flex-wrap: wrap;
+
         width: 800px;
         height: 800px;
         margin-bottom: 20px;
@@ -88,6 +91,10 @@ button {
         border: 2px solid #ebebeb;
         border-radius: 5px;
         }
+
+            .pixel {
+                border: 1px dashed #ebebeb;
+            }
 
     .options-section {
     display: flex;
