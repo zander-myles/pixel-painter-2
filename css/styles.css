@@ -80,6 +80,18 @@ button {
             display: flex;
         }
 
+            .grid-size-input {
+                font-family: 'VT323', monospace;
+                font-size: 44px;
+                letter-spacing: 3px;
+
+                border: 2px solid #bebebe;
+                border-radius: 10px;
+
+                height: 44px;
+                width: 44px;
+            }
+
         .option.color-schemes {
             display: flex;
             flex-direction: column;
