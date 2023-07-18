@@ -3,6 +3,10 @@ const easel = document.querySelector(".easel");
 const grid = document.querySelector(".grid");
 
 function createGrid(numOnSide) {
+    let pixels = document.querySelectorAll(".pixel");
+    pixels.forEach((pixel) => {
+        pixel.remove();
+    })
     let total = numOnSide ** 2;
     let dimension = 800 / numOnSide - 2;
     for (let i=0; i<total; i++) {
