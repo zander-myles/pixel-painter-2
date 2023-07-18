@@ -67,3 +67,14 @@ body {
                 display: flex;
                 justify-content: space-around;
             }
+
+                .color-scheme-card {
+                    display: flex;
+                    flex-direction: column;
+
+                    width: 180px;
+                }
+
+                    .color-scheme-card > p {
+                        font-size: 36px;
+                    }
