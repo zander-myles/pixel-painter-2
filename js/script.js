@@ -21,6 +21,13 @@ function createGrid(numOnSide) {
         pixel.className = "pixel";
         pixel.style.width = `${dimension}px`;
         pixel.style.height = `${dimension}px`;
+        pixel.addEventListener("click", () => {
+            if (!pixel.style.backgroundColor) {
+                pixel.style.backgroundColor = "pink";
+            } else {
+                pixel.style.backgroundColor = "";
+            }
+        })
         grid.appendChild(pixel);
     }
 }
@@ -32,3 +39,5 @@ easelButton.addEventListener("click", () => {
         easel.style.translate = "";
     }
 })
+
+createGrid(16);
