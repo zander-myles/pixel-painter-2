@@ -37,6 +37,8 @@ button {
 
     width: 350px;
     height: 900px;
+
+    translate: -500px;
 }
 
 .main {
