@@ -82,6 +82,8 @@ body {
                 .color-scheme-card {
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
                     flex-shrink: 0;
 
                     height: 280px;
