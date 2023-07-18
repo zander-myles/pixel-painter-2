@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+    h1 {
+        font-size: 64px;
+    }
+
     .grid {
         width: 800px;
         height: 800px;
