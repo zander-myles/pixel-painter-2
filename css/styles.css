@@ -40,7 +40,12 @@ button {
     width: 350px;
     height: 900px;
 
+    background-color: white;
+
     translate: -500px;
+
+    transition: .3s;
+    transition-timing-function: ease-out;
 }
 
 .main {
@@ -91,7 +96,7 @@ button {
 
     width: 90%;
 
-    scroll-snap-align: start;
+    scroll-snap-align: end;
     }
         h2 {
         font-size: 52px;
