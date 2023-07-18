@@ -58,6 +58,10 @@ button {
     scroll-snap-type: y mandatory;
 }
 
+.main::-webkit-scrollbar {
+    display: none;
+}
+
     .paint-section {
     display: flex;
     flex-direction: column;
