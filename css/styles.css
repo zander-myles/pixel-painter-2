@@ -26,6 +26,19 @@ button {
     border-radius: 10px;
 }
 
+.easel {
+    position: absolute;
+    left: 90px;
+    top: 40px;
+
+    box-shadow:  0px 0px 5px 5px #bebebe33;
+
+    border-radius: 20px;
+
+    width: 350px;
+    height: 900px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
