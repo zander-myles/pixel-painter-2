@@ -72,6 +72,9 @@ body {
             .color-schemes-container {
                 display: flex;
                 justify-content: space-around;
+                gap: 20px;
+
+                padding: 20px 0 20px 0;
 
                 overflow-x: scroll;
             }
