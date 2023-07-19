@@ -47,6 +47,9 @@
     --button-color: var(--dark1);
     --button-border: var(--dark2);
     --dashed-lines: var(--dark1);
+
+    --scrollbar-track-horizontal: linear-gradient(90deg, var(--dark0),  var(--dark2), var(--dark0));
+    --scrollbar-track-vertical: linear-gradient(var(--dark0),  var(--dark2), var(--dark0));
 }
 
 body {
@@ -139,7 +142,7 @@ button {
     }
 
     .colors-container::-webkit-scrollbar-track {
-        background: linear-gradient( white, black, white)
+        background: var(--scrollbar-track-vertical);
     }
 
     .new-color-button {
@@ -351,7 +354,7 @@ button {
             }
 
             .color-schemes-container::-webkit-scrollbar-track {
-                background: linear-gradient(90deg, white, black, white)
+                background: var(--scrollbar-track-horizontal);
             }
 
                 .color-scheme-card {
