@@ -15,6 +15,11 @@
     --bg-body-color: linear-gradient(90deg, #E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
     --bg-main-color: rgb(255, 255, 255);
     --shadow-color: #E2A1A822;
+
+    --gray0: #ebebeb;
+    --gray1: #bebebe;
+    --gray2: #686868;
+    --gray3: #3d3d3d;
 }
 
 body {
@@ -57,6 +62,14 @@ button {
     transition: .3s;
     transition-timing-function: ease-out;
 }
+
+    .new-color-button {
+        width: 100px;
+        height: 100px;
+
+        border: 2px solid red;
+        border-radius: 50%;
+    }
 
 .main {
     display: flex;
