@@ -108,6 +108,24 @@
     --scrollbar-thumb2: var(--seafoam4);
 }
 
+.terracotta {
+    color: var(--terracotta2);
+
+    --bg-body-color: linear-gradient(90deg, var(--terracotta0), var(--terracotta2), var(--terracotta4), var(--terracotta2), var(--terracotta0));
+    --bg-main-color: var(--light1);
+    --shadow-color: var(--terracotta3);
+    --button-color: var(--gray0);
+    --button-border: var(--terracotta2);
+    --dashed-lines: var(--light2);
+    --grid: var(--light2);
+
+    --scrollbar-track-horizontal: linear-gradient(90deg, var(--light1), var(--terracotta3), var(--light1));
+    --scrollbar-track-vertical: linear-gradient(var(--light1), var(--terracotta3), var(--light1));
+    --scrollbar-thumb0: var(--terracotta2);
+    --scrollbar-thumb1: var(--terracotta3);
+    --scrollbar-thumb2: var(--terracotta4);
+}
+
 body {
     display: flex;
     justify-content: center;
