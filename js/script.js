@@ -39,6 +39,17 @@ defaultThemeCard.addEventListener("click", () => {
     body.className = "";
 })
 
+rainbowButton.addEventListener("click", () => {
+    rainbowButton.classList.toggle("on");
+})
+
+grayscaleButton.addEventListener("click", () => {
+    rainbowButton.classList.toggle("on");
+})
+
+reactiveButton.addEventListener("click", () => {
+    reactiveButton.classList.toggle("on");
+})
 
 colorPicker.addEventListener("change", () => {
     let colorValue = colorPicker.value;
