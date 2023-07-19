@@ -17,6 +17,7 @@
     --button-color: var(--gray0);
     --button-border: var(--gray1);
     --dashed-lines: var(--gray0);
+    --grid: var(--gray0);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, white, var(--gray1), white);
     --scrollbar-track-vertical: linear-gradient(white, var(--gray1), white);
@@ -62,6 +63,7 @@
     --button-color: var(--dark1);
     --button-border: var(--dark2);
     --dashed-lines: var(--dark1);
+    --grid: var(--dark1);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, var(--dark0),  var(--dark2), var(--dark0));
     --scrollbar-track-vertical: linear-gradient(var(--dark0),  var(--dark2), var(--dark0));
