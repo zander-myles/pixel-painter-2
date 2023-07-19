@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const easelButton = document.querySelector(".easel-button");
 const easel = document.querySelector(".easel");
 const grid = document.querySelector(".grid");
@@ -14,6 +15,26 @@ const terracottaThemeCard = document.querySelector(".card-terracotta");
 const defaultThemeCard = document.querySelector(".card-default");
 
 let paintColor = colorPicker.value;
+
+darkThemeCard.addEventListener("click", () => {
+    body.className = "dark";
+})
+
+lightThemeCard.addEventListener("click", () => {
+    body.className = "light";
+})
+
+seafoamThemeCard.addEventListener("click", () => {
+    body.className = "seafoam";
+})
+
+terracottaThemeCard.addEventListener("click", () => {
+    body.className = "terracotta";
+})
+
+defaultThemeCard.addEventListener("click", () => {
+    body.className = "";
+})
 
 
 colorPicker.addEventListener("change", () => {
