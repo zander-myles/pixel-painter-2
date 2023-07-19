@@ -20,6 +20,7 @@
     --grid: var(--gray0);
     --circle-border: var(--gray1);
     --svg-color: invert(20%) sepia(0%) saturate(0%) hue-rotate(72deg) brightness(101%) contrast(92%);
+    --link-color: var(--bg-body-color);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, white, var(--gray1), white);
     --scrollbar-track-vertical: linear-gradient(white, var(--gray1), white);
@@ -68,6 +69,7 @@
     --grid: var(--dark1);
     --circle-border: var(--dark2);
     --svg-color: invert(8%) sepia(9%) saturate(3083%) hue-rotate(164deg) brightness(94%) contrast(97%);
+    --link-color: var(--bg-body-color);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, var(--dark0),  var(--dark2), var(--dark0));
     --scrollbar-track-vertical: linear-gradient(var(--dark0),  var(--dark2), var(--dark0));
@@ -88,6 +90,7 @@
     --grid: var(--light2);
     --circle-border: var(--gray1);
     --svg-color: invert(96%) sepia(0%) saturate(192%) hue-rotate(141deg) brightness(80%) contrast(91%);
+    --link-color:  linear-gradient(90deg, var(--light3), var(--light4), var(--light3));
 
     --scrollbar-track-horizontal: linear-gradient(90deg, var(--light1), var(--light3), var(--light1));
     --scrollbar-track-vertical: linear-gradient(var(--light1), var(--light3), var(--light1));
@@ -108,6 +111,7 @@
     --grid: var(--seafoam0);
     --circle-border: var(--seafoam1);
     --svg-color: invert(92%) sepia(5%) saturate(1059%) hue-rotate(172deg) brightness(89%) contrast(91%);
+    --link-color: var(--bg-body-color);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, var(--gray0), var(--seafoam2), var(--gray0));
     --scrollbar-track-vertical: linear-gradient(var(--gray0), var(--seafoam2), var(--gray0));
@@ -128,6 +132,7 @@
     --grid: var(--light2);
     --circle-border: var(--terracotta2);
     --svg-color: invert(74%) sepia(7%) saturate(1966%) hue-rotate(309deg) brightness(89%) contrast(102%);
+    --link-color: var(--bg-body-color);
 
     --scrollbar-track-horizontal: linear-gradient(90deg, var(--light1), var(--terracotta3), var(--light1));
     --scrollbar-track-vertical: linear-gradient(var(--light1), var(--terracotta3), var(--light1));
@@ -508,4 +513,8 @@ button {
             font-size: 1.25rem;
             letter-spacing: 4px;
             text-decoration: none;
+
+            background: var(--link-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
