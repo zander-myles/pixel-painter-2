@@ -43,7 +43,10 @@
 
     --bg-body-color: linear-gradient(90deg, var(--dark1), var(--dark2), var(--dark3), var(--dark2), var(--dark1));
     --bg-main-color: var(--dark0);
-    --shadow-color: var(--dark1);
+    --shadow-color: var(--dark2);
+    --button-color: var(--dark1);
+    --button-border: var(--dark2);
+    --dashed-lines: var(--dark1);
 }
 
 body {
@@ -61,9 +64,11 @@ button {
     letter-spacing: 3px;
     color: var(--text-color);
 
+    background-color: var(--button-color);
+
     padding: 5px;
 
-    border: 2px solid var(--gray1);
+    border: 2px solid var(--button-border);
     border-radius: 10px;
 }
 
@@ -254,7 +259,7 @@ button {
         }
 
             .pixel {
-                border: 1px dashed var(--gray0);
+                border: 1px dashed var(--dashed-lines);
             }
 
     .options-section {
@@ -288,8 +293,8 @@ button {
             display: flex;
             justify-content: space-between;
 
-            border-top: 2px dashed var(--gray0);
-            border-bottom: 2px dashed var(--gray0);
+            border-top: 2px dashed var(--dashed-lines);
+            border-bottom: 2px dashed var(--dashed-lines);
 
             padding: 10px;
         }
@@ -304,7 +309,9 @@ button {
                 letter-spacing: 3px;
                 color: var(--text-color);
 
-                border: 2px solid var(--gray1);
+                background-color: var(--button-color);
+
+                border: 2px solid var(--button-border);
                 border-radius: 10px;
 
                 height: 44px;
