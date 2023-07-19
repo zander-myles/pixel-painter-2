@@ -525,6 +525,7 @@ button:active {
             text-decoration: none;
 
             background: var(--link-color);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
