@@ -3,6 +3,14 @@ const easel = document.querySelector(".easel");
 const grid = document.querySelector(".grid");
 const gridSizeInput = document.querySelector(".grid-size-input");
 const newGridButton = document.querySelector(".new-grid-button");
+const newColorButton = document.querySelector(".new-color-button");
+const colorsContainer = document.querySelector(".colors-container");
+
+newColorButton.addEventListener("click", () => {
+    let newColor = document.createElement("div");
+    newColor.className = "new-color";
+    colorsContainer.appendChild(newColor);
+})
 
 newGridButton.addEventListener("click", () => {
     let numOnSide = gridSizeInput.value;
