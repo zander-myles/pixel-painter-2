@@ -12,11 +12,16 @@
     color: var(--text-color);
 
     --text-color: #3b3b3b;
+    --bg-body-color: linear-gradient(90deg, #E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
+    --bg-main-color: rgb(255, 255, 255);
+    --main-shadow-color: #E2A1A822;
 }
 
 body {
     display: flex;
     justify-content: center;
+
+    background: var(--bg-body-color);
 
     overflow: hidden;
 }
@@ -38,7 +43,7 @@ button {
     left: 90px;
     top: 40px;
 
-    box-shadow:  0px 0px 5px 5px #bebebe33;
+    box-shadow:  0px 0px 10px 5px #bebebe33;
 
     border-radius: 20px;
 
@@ -58,7 +63,8 @@ button {
     flex-direction: column;
     align-items: center;
 
-    box-shadow: 0px 0px 5px 5px #bebebe33;
+    background-color: var(--bg-main-color);
+    box-shadow: 0px 0px 5px 5px var(--main-shadow-color);
 
     width: 850px;
     height: 100vh;
@@ -111,12 +117,12 @@ button {
     scroll-snap-align: end;
     }
         h2 {
-        font-size: 1.625rem;
+        font-size: 1.5rem;
         padding: 40px;
         }
 
         p {
-            font-size: 1.375rem;
+            font-size: 1.25rem;
         }
 
         .options-container {
@@ -143,7 +149,7 @@ button {
 
             .grid-size-input {
                 font-family: 'VT323', monospace;
-                font-size: 1.375rem;
+                font-size: 1.25rem;
                 letter-spacing: 3px;
                 color: var(--text-color);
 
@@ -221,7 +227,7 @@ button {
 
             padding: 20px;
 
-            font-size: 1.17rem;
+            font-size: 1.25rem;
             letter-spacing: 4px;
             text-decoration: none;
         }
