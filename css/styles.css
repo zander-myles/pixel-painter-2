@@ -377,6 +377,10 @@ button {
                     .preview-terracotta {
                         background: linear-gradient(var(--terracotta0), var(--terracotta1), var(--terracotta2), var(--terracotta3), var(--terracotta4));
                     }
+
+                    .preview-default {
+                        background: linear-gradient(#E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
+                    }
         a {
             align-self: center;
 
