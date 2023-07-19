@@ -21,6 +21,9 @@
     --circle-border: var(--gray1);
     --svg-color: invert(20%) sepia(0%) saturate(0%) hue-rotate(72deg) brightness(101%) contrast(92%);
     --link-color: var(--bg-body-color);
+    --button-on: #afffba;
+    --button-on-border: #68ff7c;
+    --button-on-text: white;
 
     --scrollbar-track-horizontal: linear-gradient(90deg, white, var(--gray1), white);
     --scrollbar-track-vertical: linear-gradient(white, var(--gray1), white);
@@ -428,6 +431,12 @@ button:active {
 
         .rainbow-button, .grayscale-button, .reactive-button {
             width: 100px;
+        }
+
+        .rainbow-button.on, .grayscale-button.on, .reactive-button.on {
+            background-color: var(--button-on);
+            border-color: var(--button-on-border);
+            color: var(--button-on-text);
         }
 
         .option.color-schemes {
