@@ -13,7 +13,7 @@
 
     --text-color: #3b3b3b;
     --bg-body-color: linear-gradient(90deg, #E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
-    --bg-main-color: rgb(255, 255, 255);
+    --bg-main-color: #ffffff;
     --shadow-color: #E2A1A822;
 
     --gray0: #ebebeb;
@@ -32,6 +32,13 @@
     --terracotta2: #e5989b;
     --terracotta3: #b5838d;
     --terracotta4: #6d6875;
+}
+
+.dark {
+    --text-color: #ebebeb;
+    --bg-body-color: #000000;
+    --bg-main-color: #324a5f;
+    --shadow-color: #1b2a4a;
 }
 
 body {
