@@ -84,6 +84,12 @@ button {
         border-radius: 50%;
 
         opacity: 0.5;
+
+        transition: .15s;
+    }
+
+    .new-color-button:hover {
+        opacity: 1;
     }
 
     .plus-icon {
