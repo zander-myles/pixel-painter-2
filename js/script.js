@@ -7,6 +7,11 @@ const newColorButton = document.querySelector(".new-color-button");
 const colorsContainer = document.querySelector(".colors-container");
 const colorPicker = document.querySelector(".color-picker");
 const savedColor = document.querySelectorAll(".new-color");
+const darkThemeCard = document.querySelector(".card-dark");
+const lightThemeCard = document.querySelector(".card-light");
+const seafoamThemeCard = document.querySelector(".card-seafoam");
+const terracottaThemeCard = document.querySelector(".card-terracotta");
+const defaultThemeCard = document.querySelector(".card-default");
 
 let paintColor = colorPicker.value;
 
