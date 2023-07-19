@@ -44,6 +44,9 @@ button {
 }
 
 .easel {
+    display: flex;
+    flex-direction: column;
+    
     position: absolute;
     left: 90px;
     top: 40px;
