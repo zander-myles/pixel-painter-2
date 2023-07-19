@@ -517,4 +517,14 @@ button {
             background: var(--link-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            transition: .15s;
+        }
+
+        a:hover {
+            font-size: 1.4rem;
+        }
+
+        a:active {
+            font-size: 1.25rem;
         }
