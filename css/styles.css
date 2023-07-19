@@ -76,7 +76,7 @@ button {
         width: 100px;
         height: 100px;
 
-        border: 2px solid red;
+        border: 2px solid var(--gray0);
         border-radius: 50%;
     }
 
