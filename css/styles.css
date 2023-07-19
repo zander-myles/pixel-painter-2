@@ -349,6 +349,10 @@ button {
                     .color-scheme-label {
                         font-size: 1rem;
                     }
+
+                    .preview-dark {
+                        background: linear-gradient(var(--gray2), var(--gray3));
+                    }
         a {
             align-self: center;
 
