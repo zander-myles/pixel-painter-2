@@ -432,7 +432,7 @@ button {
                     }
 
                     .preview-light {
-                        background: linear-gradient(white, var(--gray1))
+                        background: linear-gradient(var(--light0), var(--light1), var(--light2), var(--light3), var(--light4))
                     }
 
                     .preview-seafoam {
