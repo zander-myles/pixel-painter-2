@@ -90,6 +90,24 @@
     --scrollbar-thumb2: var(--light4);
 }
 
+.seafoam {
+    color: var(--seafoam1);
+
+    --bg-body-color: linear-gradient(90deg, var(--seafoam1), var(--seafoam2), var(--seafoam4), var(--seafoam2), var(--seafoam1));
+    --bg-main-color: var(--gray0);
+    --shadow-color: var(--gray0);
+    --button-color: var(--seafoam0);
+    --button-border: var(--gray1);
+    --dashed-lines: var(--seafoam0);
+    --grid: var(--seafoam0);
+
+    --scrollbar-track-horizontal: linear-gradient(90deg, var(--gray0), var(--seafoam2), var(--gray0));
+    --scrollbar-track-vertical: linear-gradient(var(--gray0), var(--seafoam2), var(--gray0));
+    --scrollbar-thumb0: var(--seafoam2);
+    --scrollbar-thumb1: var(--seafoam3);
+    --scrollbar-thumb2: var(--seafoam4);
+}
+
 body {
     display: flex;
     justify-content: center;
