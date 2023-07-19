@@ -426,6 +426,9 @@ button:active {
                 width: 44px;
             }
 
+        .rainbow-button, .grayscale-button, .reactive-button {
+        }
+
         .option.color-schemes {
             display: flex;
             flex-direction: column;

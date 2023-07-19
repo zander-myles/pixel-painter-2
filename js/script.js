@@ -40,14 +40,29 @@ defaultThemeCard.addEventListener("click", () => {
 })
 
 rainbowButton.addEventListener("click", () => {
+    if (!rainbowButton.classList.contains("on")) {
+        rainbowButton.textContent = "on";
+    } else {
+        rainbowButton.textContent = "off";
+    }
     rainbowButton.classList.toggle("on");
 })
 
 grayscaleButton.addEventListener("click", () => {
-    rainbowButton.classList.toggle("on");
+    if (!grayscaleButton.classList.contains("on")) {
+        grayscaleButton.textContent = "on";
+    } else {
+        grayscaleButton.textContent = "off";
+    }
+    grayscaleButton.classList.toggle("on");
 })
 
 reactiveButton.addEventListener("click", () => {
+    if (!reactiveButton.classList.contains("on")) {
+        reactiveButton.textContent = "on";
+    } else {
+        reactiveButton.textContent = "off";
+    }
     reactiveButton.classList.toggle("on");
 })
 
