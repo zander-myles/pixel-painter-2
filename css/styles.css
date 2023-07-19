@@ -353,6 +353,10 @@ button {
                     .preview-dark {
                         background: linear-gradient(var(--gray2), var(--gray3));
                     }
+
+                    .preview-light {
+                        background: linear-gradient(white, var(--gray1))
+                    }
         a {
             align-self: center;
 
