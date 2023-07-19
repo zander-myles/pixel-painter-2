@@ -427,6 +427,7 @@ button:active {
             }
 
         .rainbow-button, .grayscale-button, .reactive-button {
+            width: 100px;
         }
 
         .option.color-schemes {
