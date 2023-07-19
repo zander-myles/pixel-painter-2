@@ -69,7 +69,10 @@ button {
 
     .colors-container {
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
+
+        width: 90%;
     }
 
     .new-color-button {
@@ -77,8 +80,9 @@ button {
         justify-content: center;
         align-items: center;
 
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
+        margin: 5px 0 5px 0;
 
         border: 2px solid var(--gray1);
         border-radius: 50%;
@@ -98,8 +102,9 @@ button {
     }
 
     .new-color {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
+        margin: 5px 0 5px 0;
 
         border: 2px solid var(--gray1);
         border-radius: 50%;
