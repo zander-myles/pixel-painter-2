@@ -67,7 +67,7 @@ button {
     transition-timing-function: ease-out;
 }
 
-    .color-container {
+    .colors-container {
         display: flex;
         flex-wrap: wrap;
     }
