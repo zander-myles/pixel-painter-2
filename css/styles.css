@@ -150,6 +150,8 @@ button {
     flex-direction: column;
     align-items: center;
 
+    position: relative;
+
     background-color: var(--bg-main-color);
     box-shadow: 0px 0px 10px 5px var(--shadow-color);
 
@@ -164,6 +166,38 @@ button {
 .main::-webkit-scrollbar {
     display: none;
 }
+
+    .tooltip-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .tooltip-container.paint {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+    }
+
+    .tooltip-container.options {
+        position: absolute;
+        bottom: -55px;
+        right: 50px;
+    }
+
+    .tooltip-container > p {
+        font-size: 1rem;
+    }
+
+    .down-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .up-arrow {
+        width: 30px;
+        height: 30px;
+        transform: rotate(180deg);
+    }
 
     .paint-section {
     display: flex;
@@ -203,6 +237,7 @@ button {
 
     scroll-snap-align: end;
     }
+
         h2 {
         font-size: 1.5rem;
         padding: 40px;
