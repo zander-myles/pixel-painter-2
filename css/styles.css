@@ -67,6 +67,11 @@ button {
     transition-timing-function: ease-out;
 }
 
+    .color-picker {
+        position: absolute;
+        left: -1000px;
+    }
+
     .colors-container {
         display: flex;
 
