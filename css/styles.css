@@ -69,11 +69,11 @@ button {
 
     .color-picker {
         position: absolute;
-        top: 147px;
-        left: 27px;
+        top: 162px;
+        left: 43px;
 
-        height: 80px;
-        width: 80px;
+        height: 50px;
+        width: 50px;
 
         opacity: 0;
     }
@@ -125,13 +125,7 @@ button {
         border: 2px solid var(--gray1);
         border-radius: 50%;
 
-        opacity: 0.5;
-
         transition: .15s;
-    }
-
-    .new-color-button:hover {
-        opacity: 1;
     }
 
     .plus-icon {
