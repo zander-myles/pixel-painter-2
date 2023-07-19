@@ -69,7 +69,7 @@ button {
 
     .colors-container {
         display: flex;
-        justify-content: space-around;
+
         flex-wrap: wrap;
 
         width: 90%;
@@ -107,9 +107,9 @@ button {
         justify-content: center;
         align-items: center;
 
-        width: 90px;
-        height: 90px;
-        margin: 5px 0 5px 0;
+        width: 85px;
+        height: 85px;
+        margin: 5px;
 
         border: 2px solid var(--gray1);
         border-radius: 50%;
@@ -129,14 +129,20 @@ button {
     }
 
     .new-color {
-        width: 90px;
-        height: 90px;
-        margin: 5px 0 5px 0;
+        width: 85px;
+        height: 85px;
+        margin: 5px;
 
         border: 2px solid var(--gray1);
         border-radius: 50%;
 
         opacity: 0.5;
+
+        transition: .15s;
+    }
+
+    .new-color:hover {
+        opacity: 1;
     }
 
 .main {
