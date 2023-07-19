@@ -40,21 +40,25 @@ defaultThemeCard.addEventListener("click", () => {
 })
 
 rainbowButton.addEventListener("click", () => {
-    if (!rainbowButton.classList.contains("on")) {
-        rainbowButton.textContent = "on";
-    } else {
-        rainbowButton.textContent = "off";
+    if (!grayscaleButton.classList.contains("on")) {
+        if (!rainbowButton.classList.contains("on")) {
+            rainbowButton.textContent = "on";
+        } else {
+            rainbowButton.textContent = "off";
+        }
+        rainbowButton.classList.toggle("on");
     }
-    rainbowButton.classList.toggle("on");
 })
 
 grayscaleButton.addEventListener("click", () => {
-    if (!grayscaleButton.classList.contains("on")) {
-        grayscaleButton.textContent = "on";
-    } else {
-        grayscaleButton.textContent = "off";
+    if (!rainbowButton.classList.contains("on")) {
+        if (!grayscaleButton.classList.contains("on")) {
+            grayscaleButton.textContent = "on";
+        } else {
+            grayscaleButton.textContent = "off";
+        }
+        grayscaleButton.classList.toggle("on");
     }
-    grayscaleButton.classList.toggle("on");
 })
 
 reactiveButton.addEventListener("click", () => {
