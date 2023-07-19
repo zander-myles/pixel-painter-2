@@ -5,10 +5,21 @@ const gridSizeInput = document.querySelector(".grid-size-input");
 const newGridButton = document.querySelector(".new-grid-button");
 const newColorButton = document.querySelector(".new-color-button");
 const colorsContainer = document.querySelector(".colors-container");
+const colorPicker = document.querySelector(".color-picker");
+const savedColor = document.querySelectorAll(".new-color");
 
-newColorButton.addEventListener("click", () => {
+let paintColor = colorPicker.value;
+
+
+colorPicker.addEventListener("change", () => {
+    let colorValue = colorPicker.value;
+    paintColor = colorValue;
     let newColor = document.createElement("div");
     newColor.className = "new-color";
+    newColor.style.backgroundColor = colorValue;
+    newColor.addEventListener("click", () => {
+        paintColor = newColor.style.backgroundColor;
+    })
     colorsContainer.appendChild(newColor);
 })
 
@@ -31,7 +42,7 @@ function createGrid(numOnSide) {
         pixel.style.height = `${dimension}px`;
         pixel.addEventListener("click", () => {
             if (!pixel.style.backgroundColor) {
-                pixel.style.backgroundColor = "pink";
+                pixel.style.backgroundColor = paintColor;
             } else {
                 pixel.style.backgroundColor = "";
             }

@@ -69,7 +69,13 @@ button {
 
     .color-picker {
         position: absolute;
-        left: -1000px;
+        top: 147px;
+        left: 27px;
+
+        height: 80px;
+        width: 80px;
+
+        opacity: 0;
     }
 
     .colors-container {
