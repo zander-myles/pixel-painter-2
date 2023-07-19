@@ -365,7 +365,7 @@ button {
                     }
 
                     .preview-seafoam {
-                        background: linear-gradient()
+                        background: linear-gradient(var(--seafoam0), var(--seafoam1), var(--seafoam2), var(--seafoam3), var(--seafoam4))
                     }
         a {
             align-self: center;
