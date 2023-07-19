@@ -14,6 +14,15 @@
     --bg-body-color: linear-gradient(90deg, #E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
     --bg-main-color: #ffffff;
     --shadow-color: #E2A1A822;
+    --button-color: var(--gray0);
+    --button-border: var(--gray1);
+    --dashed-lines: var(--gray0);
+
+    --scrollbar-track-horizontal: linear-gradient(90deg, white, var(--gray1), white);
+    --scrollbar-track-vertical: linear-gradient(white, var(--gray1), white);
+    --scrollbar-thumb0: var(--gray1);
+    --scrollbar-thumb1: var(--gray2);
+    --scrollbar-thumb2: var(--gray3);
 
     --gray0: #ebebeb;
     --gray1: #bebebe;
