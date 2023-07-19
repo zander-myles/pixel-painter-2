@@ -20,6 +20,12 @@
     --gray1: #bebebe;
     --gray2: #686868;
     --gray3: #3d3d3d;
+
+    --seafoam0: #d7dae5;
+    --seafoam1: #b9cdda;
+    --seafoam2: #a6d8d4;
+    --seafoam3: #8eaf9d;
+    --seafoam4: #6b7d7d;
 }
 
 body {
@@ -356,6 +362,10 @@ button {
 
                     .preview-light {
                         background: linear-gradient(white, var(--gray1))
+                    }
+
+                    .preview-seafoam {
+                        background: linear-gradient()
                     }
         a {
             align-self: center;
