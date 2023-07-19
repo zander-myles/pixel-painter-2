@@ -71,20 +71,21 @@
 }
 
 .light {
-    color: #ebebeb;
+    color: var(--light3);
 
-    --bg-body-color: linear-gradient(90deg, var(--dark1), var(--dark2), var(--dark3), var(--dark2), var(--dark1));
-    --bg-main-color: var(--dark0);
-    --shadow-color: var(--dark2);
-    --button-color: var(--dark1);
-    --button-border: var(--dark2);
-    --dashed-lines: var(--dark1);
+    --bg-body-color: linear-gradient(90deg, var(--light0), var(--light4), var(--light0));
+    --bg-main-color: var(--light1);
+    --shadow-color: var(--light3);
+    --button-color: var(--light2);
+    --button-border: var(--light3);
+    --dashed-lines: var(--light2);
+    --grid: var(--light2);
 
-    --scrollbar-track-horizontal: linear-gradient(90deg, var(--dark0),  var(--dark2), var(--dark0));
-    --scrollbar-track-vertical: linear-gradient(var(--dark0),  var(--dark2), var(--dark0));
-    --scrollbar-thumb0: var(--dark1);
-    --scrollbar-thumb1: var(--dark2);
-    --scrollbar-thumb2: var(--dark3);
+    --scrollbar-track-horizontal: linear-gradient(90deg, var(--light1), var(--light3), var(--light1));
+    --scrollbar-track-vertical: linear-gradient(var(--light1), var(--light3), var(--light1));
+    --scrollbar-thumb0: var(--light2);
+    --scrollbar-thumb1: var(--light3);
+    --scrollbar-thumb2: var(--light4);
 }
 
 body {
@@ -292,7 +293,7 @@ button {
         height: 800px;
         margin-bottom: 20px;
 
-        border: 2px solid var(--gray0);
+        border: 2px solid var(--grid);
         border-radius: 5px;
         }
 
