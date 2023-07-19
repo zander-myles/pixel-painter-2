@@ -9,9 +9,8 @@
     font-family: 'VT323', monospace;
     font-size: 32px;
     letter-spacing: 3px;
-    color: var(--text-color);
+    color: #3b3b3b;
 
-    --text-color: #3b3b3b;
     --bg-body-color: linear-gradient(90deg, #E2A1A8, #ECC9A5, #F3E5A8, #E4FAAB, #C4FFB5);
     --bg-main-color: #ffffff;
     --shadow-color: #E2A1A822;
@@ -32,13 +31,19 @@
     --terracotta2: #e5989b;
     --terracotta3: #b5838d;
     --terracotta4: #6d6875;
+
+    --dark0: #324a5f;
+    --dark1: #1b2a41;
+    --dark2: #0c1821;
+    --dark3: #000000;
 }
 
 .dark {
-    --text-color: #ebebeb;
-    --bg-body-color: #000000;
-    --bg-main-color: #324a5f;
-    --shadow-color: #1b2a4a;
+    color: #ebebeb;
+
+    --bg-body-color: linear-gradient(90deg, var(--dark1), var(--dark2), var(--dark3), var(--dark2), var(--dark1));
+    --bg-main-color: var(--dark0);
+    --shadow-color: var(--dark1);
 }
 
 body {
