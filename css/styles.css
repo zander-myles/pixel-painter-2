@@ -45,9 +45,32 @@
     --dark1: #1b2a41;
     --dark2: #0c1821;
     --dark3: #000000;
+
+    --light0: #fbfbf2;
+    --light1: #e5e6e4;
+    --light2: #cfd2cd;
+    --light3: #a6a2a2;
+    --light4: #847577;
 }
 
 .dark {
+    color: #ebebeb;
+
+    --bg-body-color: linear-gradient(90deg, var(--dark1), var(--dark2), var(--dark3), var(--dark2), var(--dark1));
+    --bg-main-color: var(--dark0);
+    --shadow-color: var(--dark2);
+    --button-color: var(--dark1);
+    --button-border: var(--dark2);
+    --dashed-lines: var(--dark1);
+
+    --scrollbar-track-horizontal: linear-gradient(90deg, var(--dark0),  var(--dark2), var(--dark0));
+    --scrollbar-track-vertical: linear-gradient(var(--dark0),  var(--dark2), var(--dark0));
+    --scrollbar-thumb0: var(--dark1);
+    --scrollbar-thumb1: var(--dark2);
+    --scrollbar-thumb2: var(--dark3);
+}
+
+.light {
     color: #ebebeb;
 
     --bg-body-color: linear-gradient(90deg, var(--dark1), var(--dark2), var(--dark3), var(--dark2), var(--dark1));
