@@ -13,6 +13,9 @@ const lightThemeCard = document.querySelector(".card-light");
 const seafoamThemeCard = document.querySelector(".card-seafoam");
 const terracottaThemeCard = document.querySelector(".card-terracotta");
 const defaultThemeCard = document.querySelector(".card-default");
+const rainbowButton = document.querySelector(".rainbow-button");
+const grayscaleButton = document.querySelector(".grayscale-button");
+const reactiveButton = document.querySelector(".reactive-button");
 
 let paintColor = colorPicker.value;
 
