@@ -25,6 +25,8 @@
     --button-on-border: #68ff7c;
     --button-on-text: white;
 
+    --vh: 100vh;
+
     --scrollbar-track-horizontal: linear-gradient(90deg, white, var(--gray1), white);
     --scrollbar-track-vertical: linear-gradient(white, var(--gray1), white);
     --scrollbar-thumb0: var(--gray1);
@@ -297,7 +299,7 @@ button:active {
     box-shadow: 0px 0px 10px 5px var(--shadow-color);
 
     width: 850px;
-    height: 100vh;
+    height: var(--vh);
 
     overflow-y: scroll;
 
@@ -315,14 +317,14 @@ button:active {
 
     .tooltip-container.paint {
         position: absolute;
-        bottom: 30px;
-        right: 50px;
+        bottom: 2vh;
+        right: 0;
     }
 
     .tooltip-container.options {
         position: absolute;
-        bottom: -55px;
-        right: 50px;
+        bottom: -6vh;
+        right: 0;
     }
 
     .tooltip-container > p {
@@ -348,13 +350,16 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    flex: 1 0 var(--vh);
+
+    height: var(--vh);
 
     scroll-snap-align: start;
     }
 
         h1 {
         font-size: 2rem;
-        padding: 10px 0 15px 0;
         }
 
         .grid {
@@ -363,7 +368,6 @@ button:active {
 
         width: 800px;
         height: 800px;
-        margin-bottom: 20px;
 
         border: 2px solid var(--grid);
         border-radius: 5px;
@@ -373,19 +377,33 @@ button:active {
                 border: 1px dashed var(--dashed-lines);
             }
 
+        .main-buttons {
+            display: flex;
+            justify-content: space-around;
+
+            width: 40%;
+        }
+
     .options-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    flex: 1 0 var(--vh);
+    gap: 2vh;
 
     width: 90%;
+    height: var(--vh);
 
     scroll-snap-align: end;
     }
 
+        .options-header {
+            display: flex;
+        }
+
         h2 {
         font-size: 1.5rem;
-        padding: 40px;
         }
 
         p {
