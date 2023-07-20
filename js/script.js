@@ -115,6 +115,8 @@ function createGrid(numOnSide) {
         pixel.addEventListener("click", () => {
             if (grayscaleButton.classList.contains("on")) {
                 paintColor = grayscaleModeColors[Math.floor(Math.random() * 4)];
+            } else if (rainbowButton.classList.contains("on")) {
+                paintColor = rainbowModeColors[Math.floor(Math.random() * 7)];
             }
             if (!pixel.style.backgroundColor) {
                 pixel.style.backgroundColor = paintColor;
