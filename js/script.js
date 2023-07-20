@@ -3,6 +3,7 @@ const easelButton = document.querySelector(".easel-button");
 const easel = document.querySelector(".easel");
 const grid = document.querySelector(".grid");
 const gridSizeInput = document.querySelector(".grid-size-input");
+const gridSizeLabel = document.querySelector(".grid-size-label");
 const newGridButton = document.querySelector(".new-grid-button");
 const newColorButton = document.querySelector(".new-color-button");
 const colorsContainer = document.querySelector(".colors-container");
@@ -84,6 +85,11 @@ colorPicker.addEventListener("change", () => {
     if (reactiveButton.classList.contains("on")) {
         body.style.background = paintColor;
     }
+})
+
+gridSizeInput.addEventListener("change", () => {
+    let numOnSide = gridSizeInput.value;
+    gridSizeLabel.textContent = `x${numOnSide}`;
 })
 
 newGridButton.addEventListener("click", () => {
