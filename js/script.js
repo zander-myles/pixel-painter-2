@@ -18,6 +18,8 @@ const rainbowButton = document.querySelector(".rainbow-button");
 const grayscaleButton = document.querySelector(".grayscale-button");
 const reactiveButton = document.querySelector(".reactive-button");
 
+const grayscaleModeColors = ["#ebebeb", "#bebebe", "#686868", "#3d3d3d"];
+
 let paintColor = colorPicker.value;
 
 darkThemeCard.addEventListener("click", () => {
