@@ -205,8 +205,6 @@ button:active {
 
     .color-picker {
         position: absolute;
-        top: 162px;
-        left: 43px;
 
         height: 50px;
         width: 50px;
