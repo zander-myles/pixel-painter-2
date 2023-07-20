@@ -73,17 +73,19 @@ reactiveButton.addEventListener("click", () => {
 })
 
 colorPicker.addEventListener("change", () => {
-    let colorValue = colorPicker.value;
-    paintColor = colorValue;
-    let newColor = document.createElement("div");
-    newColor.className = "new-color";
-    newColor.style.backgroundColor = colorValue;
-    newColor.addEventListener("click", () => {
-        paintColor = newColor.style.backgroundColor;
-    })
-    colorsContainer.appendChild(newColor);
-    if (reactiveButton.classList.contains("on")) {
-        body.style.background = paintColor;
+    if (!rainbowButton.classList.contains("on") && !grayscaleButton.classList.contains("on")) {
+        let colorValue = colorPicker.value;
+        paintColor = colorValue;
+        let newColor = document.createElement("div");
+        newColor.className = "new-color";
+        newColor.style.backgroundColor = colorValue;
+        newColor.addEventListener("click", () => {
+            paintColor = newColor.style.backgroundColor;
+        })
+        colorsContainer.appendChild(newColor);
+        if (reactiveButton.classList.contains("on")) {
+            body.style.background = paintColor;
+        }
     }
 })
 
