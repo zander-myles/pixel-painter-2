@@ -66,6 +66,7 @@ reactiveButton.addEventListener("click", () => {
         reactiveButton.textContent = "on";
     } else {
         reactiveButton.textContent = "off";
+        body.style.background = "var(--bg-body-color)";
     }
     reactiveButton.classList.toggle("on");
 })
@@ -80,6 +81,9 @@ colorPicker.addEventListener("change", () => {
         paintColor = newColor.style.backgroundColor;
     })
     colorsContainer.appendChild(newColor);
+    if (reactiveButton.classList.contains("on")) {
+        body.style.background = paintColor;
+    }
 })
 
 newGridButton.addEventListener("click", () => {
