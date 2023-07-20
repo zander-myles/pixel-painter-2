@@ -73,19 +73,17 @@ reactiveButton.addEventListener("click", () => {
 })
 
 colorPicker.addEventListener("change", () => {
-    if (!rainbowButton.classList.contains("on") && !grayscaleButton.classList.contains("on")) {
-        let colorValue = colorPicker.value;
-        paintColor = colorValue;
-        let newColor = document.createElement("div");
-        newColor.className = "new-color";
-        newColor.style.backgroundColor = colorValue;
-        newColor.addEventListener("click", () => {
-            paintColor = newColor.style.backgroundColor;
-        })
-        colorsContainer.appendChild(newColor);
-        if (reactiveButton.classList.contains("on")) {
-            body.style.background = paintColor;
-        }
+    let colorValue = colorPicker.value;
+    paintColor = colorValue;
+    let newColor = document.createElement("div");
+    newColor.className = "new-color";
+    newColor.style.backgroundColor = colorValue;
+    newColor.addEventListener("click", () => {
+        paintColor = newColor.style.backgroundColor;
+    })
+    colorsContainer.appendChild(newColor);
+    if (reactiveButton.classList.contains("on")) {
+        body.style.background = paintColor;
     }
 })
 
@@ -123,10 +121,12 @@ function createGrid(numOnSide) {
 }
 
 easelButton.addEventListener("click", () => {
-    if (!easel.style.translate) {
-        easel.style.translate = "0";
-    } else {
-        easel.style.translate = "";
+    if (!rainbowButton.classList.contains("on") && !grayscaleButton.classList.contains("on")) {
+        if (!easel.style.translate) {
+            easel.style.translate = "0";
+        } else {
+            easel.style.translate = "";
+        }
     }
 })
 
